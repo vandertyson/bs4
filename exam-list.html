@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+        .img-container {
+            position: relative;
+            width: 37%;
+            /* The size you want */
+        }
+
+        .img-container :after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+            /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+        }
+
+        .img-container img {
+            position: absolute;
+            /* Take your picture out of the flow */
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            /* Make the picture taking the size of it's parent */
+            width: 100%;
+            /* This if for the object-fit */
+            height: 100%;
+            /* This if for the object-fit */
+            object-fit: cover;
+            /* Equivalent of the background-size: cover; of a background-image */
+            object-position: center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="col-12">
+        <div class="row border-bottom p-3">
+            <div class="col">
+                <a class="btn btn-light btn-sm" href="home1.html" cursor: pointer;>Quay Lại</a>
+            </div>
+            <div class="col">
+                <h4 class="float-right">Xin chào Nguyễn Văn A</h4>
+            </div>
+        </div>
+        <div class="row mt-4 justify-content-center">
+            <h2 class="text-success">Chào mừng bạn đến với cổng thi thử trực tuyến</h2>
+        </div>
+        <div class="row justify-content-center">
+            <h4 class="">LuyệnThiCôngChức.com</h2>
+        </div>
+        <div class="" style="margin-top: 5vh">
+            <div class="row border p-0 mb-1">
+                <div class="col-2 p-0 img-container">
+                    <img src="jav.png">
+                </div>
+                <div class="col-10 p-0">
+                    <div class="d-flex">
+                        <h3 class="mr-auto col-10 p-1">Bài thi số 1 </h3>
+                        <div class="text-right p-2">
+                            <butaton type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#exampleModal">Vào thi</button>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="mr-auto col-10 p-1">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </div>
+                        <div class="p-1 col-1"><b>20 câu</b></div>
+                        <div class="p-1 col-1"><b>15 phút</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border p-0 mb-1">
+                <div class="col-2 p-0 img-container">
+                    <img src="jav.png">
+                </div>
+                <div class="col-10 p-0">
+                    <div class="d-flex">
+                        <h3 class="mr-auto col-10 p-1">Bài thi số 2 </h3>
+                        <div class="text-right p-2">
+                            <butaton type="button" class="btn btn-success" data-toggle="modal"
+                                data-target="#exampleModal">Vào thi</button>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="mr-auto col-10 p-1">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </div>
+                        <div class="p-1 col-1"><b>20 câu</b></div>
+                        <div class="p-1 col-1"><b>15 phút</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border p-0 mb-1">
+                <div class="col-2 p-0 img-container">
+                    <img src="insta.png">
+                </div>
+                <div class="col-10 p-0">
+                    <div class="d-flex">
+                        <h3 class="mr-auto col-10 p-1">Bài thi số 3 <small class="text-muted">VIP</small>
+                        </h3>
+                        <div class="text-right p-2"><button type="button" class="btn btn-primary">Mua</button></div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="mr-auto col-10 p-1">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </div>
+                        <div class="p-1 col-1"><b>50 câu</b></div>
+                        <div class="p-1 col-1"><b>45 phút</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border p-0 mb-1">
+                <div class="col-2 p-0 img-container">
+                    <img src="insta.png">
+                </div>
+                <div class="col-10 p-0">
+                    <div class="d-flex">
+                        <h3 class="mr-auto col-10 p-1">Bài thi số 4 <small class="text-muted">VIP</small>
+                        </h3>
+                        <div class="text-right p-2"><button type="button" class="btn btn-primary">Mua</button></div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="mr-auto col-10 p-1">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </div>
+                        <div class="p-1 col-1"><b>50 câu</b></div>
+                        <div class="p-1 col-1"><b>45 phút</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Bạn có chắc chắn muốn làm bài</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Mã đề: SSDA45555</p>
+                        <p>Số lượng câu hỏi: 50</p>
+                        <p>Thời gian: 45 phút</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-success" href="index.html" cursor: pointer;>Đồng ý</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại ôn tập</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
