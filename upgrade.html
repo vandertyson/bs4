@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh3U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+</head>
+
+
+
+<body>
+    <div class="col-12">
+        <div class="row border-bottom p-3">
+            <div class="col">
+                <a class="btn btn-light btn-sm" href="exam-list.html" cursor: pointer;>Quay Lại</a>
+            </div>
+            <div class="col">
+                <h3 class="float-right">Xin chào Nguyễn Văn A</h3>
+            </div>
+        </div>
+        <div class="row mt-4 justify-content-center">
+            <h2 class="text-success">Chào mừng bạn đến với cổng thi thử trực tuyến</h2>
+        </div>
+        <div class="row justify-content-center">
+            <h3 class="">LuyệnThiCôngChức.com</h2>
+        </div>
+        <div class="p-2" style="margin-top: 5vh">
+            <h1>Để có thể truy cập được các nội dung ôn luyện thi thử và kho tài liệu trực tuyến của Luyện Thi Công Chức
+                bạn vui lòng nâng cấp tài khoản. Bạn sẽ nhận được: </h1>
+            <div class="row col-12">
+                <h2>&nbsp;&nbsp;<span class="text-success">&#10003;</span>&nbsp;&nbsp;
+                    Bộ đề thi đáp án của 5 kỳ thi gần nhất</h2>
+            </div>
+            <div class="row col-12">
+                <h2>&nbsp;&nbsp;<span class="text-success">&#10003;</span>&nbsp;&nbsp;
+                    Bộ 10 đề thi luyện thi trực truyến cho kỳ thi 12/2020</h2>
+            </div>
+            <div class="row col-12">
+                <h2>&nbsp;&nbsp;<span class="text-success">&#10003;</span>&nbsp;&nbsp;
+                    Bộ 3 tài liệu luyện thi có kèm giải thích chi tiết</h2>
+            </div>
+            <div id="sale" class="p-4 col-12 mt-4 border" style="text-align: center; display: none;">
+                <p class="display-4">Đặc biệt, bạn được tặng code giảm giá <span
+                        class="badge badge-danger">NVX662</span> còn hiệu lực
+                    trong <span id="timer" style="color: red;"></span>. Giá chỉ còn: </p>
+                <div class="display-4" style="text-decoration: line-through;">500 000 đ</div>
+                <div class="display-2"><span class="badge badge-danger">300 000 đ</span></div>
+
+            </div>
+            <div class="p-2 mt-4">
+                <h1>Để nâng cấp tài khoản vui lòng liên hệ với chúng tôi qua một trong các phương thức sau:</h1>
+                <h2>&nbsp;&nbsp;- Gọi điện trực tiếp tới số <a class="text-info">098.888.8888</a></h2>
+                <h2>&nbsp;&nbsp;- Zalo Phạm Văn A <a class="text-info">098.888.8888</a></h2>
+                <h2>&nbsp;&nbsp;- Facebook <a class="text-info">LuyệnThiCôngChức.com</a></h2>
+            </div>
+
+        </div>
+</body>
+
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date();
+    var numberOfDaysToAdd = 1;
+    countDownDate.setDate(countDownDate.getDate() + numberOfDaysToAdd);
+    // var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("timer").innerHTML = hours + " giờ "
+            + minutes + " phút " + seconds + " giây";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
+    setTimeout(() => {
+        document.getElementById("sale").style.display = "block";
+    }, 1500);
+</script>
+
+</html>
